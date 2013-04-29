@@ -4,7 +4,7 @@ CPPThreads
 About
 -----
 
-C++ Threading library (POSIX / Windows).
+C++ threading library (POSIX / Windows).
 
 License
 -------
