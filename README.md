@@ -1,47 +1,23 @@
-CPPNotifications
-================
+CPPThreads
+==========
 
-C++ Notification System
------------------------
+About
+-----
 
-Copyright (c) 2012, Jean-David Gadina <macmade@eosgarden.com>  
-Distributed under the Boost Software License, Version 1.0.
+C++ Threading library (POSIX / Windows).
 
-### About:
+License
+-------
 
-CPPNotifications is a Cocoa like (Objective-C) notification system for C++ (POSIX and Windows).
+CPPThreads is released under the terms of the Boost Software License - Version 1.0.
 
-### License:
+Repository Infos
+----------------
 
-CPPNotifications is released under the terms of the [Boost][1] Software License - Version 1.0.
-
-[1]: http://www.boost.org/LICENSE_1_0.txt   "BOOST"
-
-### Example:
-
-    #include <iostream>
-    #include "NotificationCenter.h"
-    
-    class Bar: public EOS::Observer
-    {
-        public:
-            
-            void handleNotification( const EOS::Notification & );
-    };
-    
-    void Bar::handleNotification( const EOS::Notification & notification )
-    {
-        std::cout << "Received notification: " << notification.name() << std::endl;
-    }
-    
-    int main( void )
-    {
-        Bar b1;
-        Bar b2;
-        
-        EOS::NotificationCenter::defaultCenter().addObserver( b1, "test" );
-        EOS::NotificationCenter::defaultCenter().addObserver( b2, "test" );
-        EOS::NotificationCenter::defaultCenter().postNotification( "test" );
-        
-        return 0;
-    }
+    Owner:			Jean-David Gadina - XS-Labs
+    Web:			www.xs-labs.com
+    Blog:			www.noxeos.com
+    Twitter:		@macmade
+    GitHub:			github.com/macmade
+    LinkedIn:		ch.linkedin.com/in/macmade/
+    StackOverflow:	stackoverflow.com/users/182676/macmade

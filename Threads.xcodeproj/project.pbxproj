@@ -8,7 +8,6 @@
 
 /* Begin PBXFileReference section */
 		0517886414BDE5CA00974841 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		05E9123014C57A2700C5CAAA /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
 		05E9123114C57A2700C5CAAA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		05E9123214C57A4A00C5CAAA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		05E9123314C57A4A00C5CAAA /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
@@ -25,7 +24,6 @@
 		0517885414BDE37D00974841 = {
 			isa = PBXGroup;
 			children = (
-				05E9123014C57A2700C5CAAA /* LICENSE.md */,
 				05E9123114C57A2700C5CAAA /* README.md */,
 				0517886414BDE5CA00974841 /* Makefile */,
 				0517886514BDE5CA00974841 /* src */,

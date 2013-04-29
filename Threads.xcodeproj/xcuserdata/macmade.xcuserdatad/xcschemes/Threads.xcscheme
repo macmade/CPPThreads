@@ -14,9 +14,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0517885B14BDE37D00974841"
-               BuildableName = "Notifications"
-               BlueprintName = "Notifications"
-               ReferencedContainer = "container:Notifications.xcodeproj">
+               BuildableName = "Threads"
+               BlueprintName = "Threads"
+               ReferencedContainer = "container:Threads.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,6 +35,7 @@
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
       <AdditionalOptions>
