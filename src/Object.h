@@ -51,6 +51,8 @@ namespace EOS
     {
         private:
             
+            friend class Thread;
+        
             /*!
              * @method          EOS::Exception::_startThread
              * @abstract        ...

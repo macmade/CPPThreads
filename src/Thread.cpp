@@ -89,14 +89,14 @@ namespace EOS
         EntryPoint   * ep;
         void        ** vp;
         
-        if( NULL == ( ap = ( void ** )malloc( sizeof( EntryPoint ) + ( 2 * sizeof( void * ) ) ) ) )
+        if( NULL == ( ap = static_cast< void ** >( malloc( sizeof( EntryPoint ) + ( 2 * sizeof( void * ) ) ) ) ) )
         {
             return false;
         }
         
-        ep      = ( EntryPoint * )ap;
+        ep      = reinterpret_cast< EntryPoint * >( ap );
         ep[ 0 ] = func;
-        vp      = ( void ** )( &ep[ 1 ] );
+        vp      = reinterpret_cast< void ** >( &ep[ 1 ] );
         vp[ 0 ] = target;
         vp[ 1 ] = thread;
         

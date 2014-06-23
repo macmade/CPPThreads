@@ -50,15 +50,15 @@ namespace EOS
         Object             * target;
         void               * arg;
         
-        ap = ( void ** )args;
-        ep = ( Thread::EntryPoint * )ap;
-        vp = ( void ** )( &ep[ 1 ] );
+        ap = static_cast< void ** >( args );
+        ep = reinterpret_cast< Thread::EntryPoint * >( ap );
+        vp = reinterpret_cast< void ** >( &ep[ 1 ] );
         
         func   = ep[ 0 ];
-        target = ( Object * )vp[ 0 ];
+        target = static_cast< Object * >( vp[ 0 ] );
         arg    = vp[ 1 ];
         
-        ( target->*( ( void ( Object::* )( void * ) )func ) )( arg );
+        ( target->*( reinterpret_cast< void ( Object::* )( void * ) >( func ) ) )( arg );
         
         free( args );
         

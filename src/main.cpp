@@ -36,6 +36,7 @@
  */
 
 #include <iostream>
+#include <unistd.h>
 #include "Object.h"
 #include "Thread.h"
 #include "Lock.h"

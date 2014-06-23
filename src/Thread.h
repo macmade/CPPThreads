@@ -41,7 +41,7 @@
 #include <string>
 #include <vector>
 
-#define DetachThread( __func__, ... ) EOS::Thread::detach( ( EOS::Thread::EntryPoint )&__func__, __VA_ARGS__ );
+#define DetachThread( __func__, ... ) EOS::Thread::detach( static_cast< EOS::Thread::EntryPoint >( &__func__ ), __VA_ARGS__ );
 
 namespace EOS
 {
