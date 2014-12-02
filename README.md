@@ -2,6 +2,10 @@ CPPThreads
 ==========
 
 [![Build Status](https://img.shields.io/travis/macmade/CPPThreads.svg?branch=master&style=flat)](https://travis-ci.org/macmade/CPPThreads)
+[![Issues](http://img.shields.io/github/issues/macmade/CPPThreads.svg?style=flat)](https://github.com/macmade/CPPThreads/issues)
+![Status](https://img.shields.io/badge/status-inactive-lightgray.svg?style=flat)
+![License](https://img.shields.io/badge/license-boost-brightgreen.svg?style=flat)
+[![Contact](https://img.shields.io/badge/contact-@macmade-blue.svg?style=flat)](https://twitter.com/macmade)
 
 About
 -----
